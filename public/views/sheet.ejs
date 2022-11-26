@@ -47,12 +47,13 @@
    <div class="row col-6"> <input type="text"  placeholder="Nome do Personagem"></div>
    <div class="row col-5"><input type="text"  placeholder="Classe do Personagem"></div>
    <div class="row col-3"><input type="text"  placeholder="Altura"></div>
+   <div class="row col-10" style="width: 284px;"><img src="Image/Fada.jpg" style="width: 282px; height:min-content"> </div>
     
   </div>
 </div>
 
 <!-- Status Básicos do Personagem -->
-  <div class="container">
+  <div class="container" style="position: relative;">
     <input type="number"  placeholder="seu hp">
     <input type="number" min="0" max="100"   placeholder="CDE">
     <input type="number"    placeholder="Movimento">
@@ -61,8 +62,8 @@
 
 
   <!-- Select de Moral -->
-    <div class="container">
-    <label class="form-label" for="Moral">Sua Moral</label>
+    <div class="container" style="width: 200px;">
+    <label class="form-label"  for="Moral">Sua Moral</label>
 
     <select class="form-select form-select-sm" name="cat_moral">
         <option value="0">Otimista</option>
@@ -75,16 +76,12 @@
         
     </select>
     </div>
-
+    <!-- Checkbox de condições -->
     <div class="container">
 
     <div class="form-switch">
-
-    
-    <!-- Checkbox de condições -->
     <input type="checkbox" name="switch" class="form-check-input" id="switch-switch" >
     <label> Condição 1 </label>
-    
     </div>
     <div class="form-switch">
 
@@ -126,7 +123,19 @@
     <label> Condição 1 </label>
     
     </div>
+    <div class="form-switch">
+
     
+
+      <input type="checkbox" name="switch" class="form-check-input" id="switch-switch" >
+      <label> Condição 1 </label>
+      
+    </div>
+    <div class="form-switch">
+      <input type="checkbox" name="switch" class="form-check-input" id="switch-switch" >
+      <label> Condição 1 </label>
+      
+    </div>
     
 
     </div>
@@ -168,126 +177,128 @@
         
 
     </div>
-
     <!-- Tabela de Perícias-->
-    
-    <div class="container">
-    <div class="table">
-    <table class="table-bordered">
-       
-        <thead>
-          <tr class="table-primary">
-            <th>Perícias</th>
-            <th>Bônus</th>
-          </tr>
-        </thead>
-       
-        
-        <tbody class="table-group-divider">
-          <tr>
-            <td>Misticidade</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Intuição</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Engenhosidade</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Lógica</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Briga/luta</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Arrombamento(for)</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Atletismo</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Tática</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Conhecimento</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Criaturas</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Tratamento</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Percepção</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Apresentação</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Enganação</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Intimidação</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Liderança</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Resistência(física)</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Manobra</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Resiliência(emocional)</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Acrobacia</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Reflexo</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Furtividade</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Roubar</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-          <tr>
-            <td>Arrombamento(dex)</td>
-            <td><input type="number" name="For" placeholder=""></td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="container" style="width: 400px;">
+      <div class="table">
+      <table class="table-bordered">
+         
+          <thead>
+            <tr class="table-primary">
+              <th>Perícias</th>
+              <th>Bônus</th>
+            </tr>
+          </thead>
+         
+          
+          <tbody class="table-group-divider">
+            <tr class="table-info">
+              <td >Misticidade</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-info">
+              <td>Intuição</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-info">
+              <td>Engenhosidade</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-info">
+              <td>Lógica</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-danger">
+              <td>Briga/luta</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-danger">
+              <td>Arrombamento(for)</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-danger">
+              <td>Atletismo</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-warning">
+              <td>Tática</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-warning">
+              <td>Conhecimento</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-warning">
+              <td>Criaturas</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-warning">
+              <td>Tratamento</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-warning">
+              <td>Percepção</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-success">
+              <td>Acrobacia</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-success">
+              <td>Reflexo</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-success">
+              <td>Furtividade</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-success">
+              <td>Roubar</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-success">
+              <td>Arrombamento(dex)</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-secondary">
+              <td>Apresentação</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-secondary">
+              <td>Enganação</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-secondary">
+              <td>Intimidação</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-secondary">
+              <td>Liderança</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-dark">
+              <td>Resistência(física)</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-dark">
+              <td>Manobra</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-dark">
+              <td>Resiliência(emocional)</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            <tr class="table-dark">
+              <td>Montaria</td>
+              <td><input type="number" name="For" placeholder=""></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
     </div>
-    </div>
-
     <br>
     <!-- Inventário -->
-    <div class="container">
+    <div style="width: 600px;" class="container">
     <h2>Inventário</h2>
 
     <br>
@@ -408,10 +419,99 @@
     </table>
     
     </div>
-
-  <div class="container">
-  <button type="button" class="btn btn-primary"> Enviar</button>
-</div>
+    <!-- Artefatos -->
+    <div style="width: 600px;" class="container">
+      <h2>Artefatos e Itens Lendários</h2>
+  
+      <br>
+      <table class="table-bordered">
+          <thead>
+            <tr>
+              
+              <th>Artefato</th>
+              <th>Efeito</th>
+              <th>Dimensão</th>
+                           
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+              <td><input type="text" name="espaço01"></td>
+            </tr>
+        
+          
+          </tbody>
+  
+      </table>
+      
+    </div>
+    <!-- Botão :) -->
+    <div class="container">
+  <button type="button" class="btn btn-primary float-end"> Enviar</button>
+    </div>
 
 
 </form>
