@@ -11,6 +11,7 @@ const route = express.Router();
 //httpnaojsnoqn/ e a depois da virgula é a função que vai ser chamada
 route.get('/',homeController.homepage);
 route.get('/sheet',sheetController.sheet);
+route.get('/inventory',inventoryController.inventory);
 
 
 module.exports=route;

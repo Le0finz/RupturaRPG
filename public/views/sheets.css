@@ -1,15 +1,9 @@
-
 .titulo{
- 
-  padding: 20px;
-  bottom: 40px;
-  color: blue;
+  position: relative;
+  right: 0px;
 }
 
-.cabecalho{
-    color:red ;
-    text-align: left;
+label {
+  vertical-align: top;
 }
-
-
 
