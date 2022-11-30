@@ -4,6 +4,7 @@ const express = require("express");
 //importando a função homepage
 const homeController = require("./controllers/homeController");
 const sheetController = require("./controllers/sheetController");
+const inventoryController = require("./controllers/inventoryController");
 
 // Criei a rota
 const route = express.Router();
